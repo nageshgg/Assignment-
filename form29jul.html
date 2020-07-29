@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <label>Full Name*:</label><br>
+        <input type="text" placeholder=" FirstName LastName" required><br>
+
+        <label>Email address*:</label><br>
+        <input type="email" placeholder="EMAIL_ADDRESS" required><br>
+
+        <label>Select Tour package*:</label><br>
+        <select name="tour_package" id="tour" required>
+            <option value="Goa">Goa</option>
+            <optIon value="Pune">Pune</optIon>
+            <option value="Indore">Indore</option>
+        </select><br>
+
+        <label for="date"> Arrival date*:</label><br>
+        <input type="date" required><br>
+
+        <label for="person">Number of person*:</label><br>
+        <input type="text" name="number" placeholder="Unknown_type" required><br>
+
+        <label for="avail">What would you want to avail?*</label><br>
+        Boarding<input type="checkbox" name="boarding" required><br>
+        Fooding<input type="checkbox" name="Fooding"><br>
+        Sight seeing<input type="checkbox" name="Sight_seen"><br>
+
+        <label>Discount Coupon code:</label><br>
+        <input type="text" placeholder="unknown_type"><br>
+
+        <label>Terms and condtion*</label><br>
+        <input type="radio" name="condition" checked>I agree
+        <input type="radio" name="condition"> I disagree<br>
+
+        <input type="submit" value="complete reservation">
+
+
+    </form>
+</body>
+
+</html>
