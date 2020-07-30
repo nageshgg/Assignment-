@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<title>HTML CSS Exercise - Style the element which is not empty</title>
+<style>
+.container:not(:empty) {
+  background: #5ac4ed;
+  height: 150px;
+  width: 200px;
+  margin:10px
+}
+
+</style>
+</head>
+<body>
+<div class="container"><!-- I am empty --></div>
+<div class="container">I am not empty</div>
+</body>
+</html>
