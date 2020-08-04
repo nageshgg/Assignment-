@@ -1,0 +1,45 @@
+body {
+    margin          : 0;
+    padding         : 0;
+    width           : 100%;
+    background-color: #dbdbdb
+}
+.tabs{
+    background-color: white;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    text-align: center;
+}
+.tab-element{
+    font-size: 13px;
+    line-height: 87px;
+}
+.space{
+    margin: auto;
+}
+.element{
+    text-decoration: none;
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    letter-spacing: 1.4px;
+    font-family: "bebas-neue", sans-serif;
+    
+}
+.element:hover{
+    color: #4a4a4a;
+}
+.logo{
+    width: 120px;
+    height: 120px;
+    z-index: 50;
+}
+.flex{
+    display: flex;
+}
+.bebas{
+    font-family: "bebas-neue", sans-serif
+}
