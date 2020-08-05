@@ -4,42 +4,123 @@ body {
     width           : 100%;
     background-color: #dbdbdb
 }
-.tabs{
+
+.tabs {
     background-color: white;
-    width: 100%;
-    height: 75px;
-    position: fixed;
-    top: 0;
-    text-align: center;
+    width           : 100%;
+    height          : 75px;
+    position        : fixed;
+    top             : 0;
+    text-align      : center;
 }
-.tab-element{
-    font-size: 13px;
+
+.tab-element {
+    font-size  : 13px;
     line-height: 87px;
 }
-.space{
+
+.space {
     margin: auto;
 }
-.element{
+
+.element {
     text-decoration: none;
-    margin: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: black;
-    letter-spacing: 1.4px;
-    font-family: "bebas-neue", sans-serif;
-    
+    margin         : 10px;
+    margin-left    : 10px;
+    margin-right   : 10px;
+    color          : black;
+    letter-spacing : 1.4px;
+    font-family    : "bebas-neue", sans-serif;
+
 }
-.element:hover{
+
+.element:hover {
     color: #4a4a4a;
 }
-.logo{
-    width: 120px;
-    height: 120px;
+
+.logo {
+    width  : 120px;
+    height : 120px;
     z-index: 50;
 }
-.flex{
-    display: flex;
+
+.flex {
+    display        : flex;
+    justify-content: center;
 }
-.bebas{
+
+.bebas {
     font-family: "bebas-neue", sans-serif
+}
+
+
+/* Here it is for the block1*/
+
+.block1 {
+    margin-top       : 75px;
+    background-image : url(images/Banner.png);
+    width            : 100%;
+    height           : 800px;
+    background-repeat: no-repeat;
+    background-size  : contain;
+}
+
+/* display grid*/
+.grid {
+    display              : grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows   : 20% 20% 20% 20% 20%;
+}
+
+.name-container {
+    grid-column-start: 2;
+    grid-row-start   : 2;
+}
+
+.textbox-container {
+    grid-row-start   : 3;
+    grid-column-start: 2;
+    padding-top      : 100px;
+}
+
+.signblock {
+    grid-column-start: 1;
+    grid-row-start   : 4;
+
+}
+
+/* End of the display grid*/
+
+.name {
+    margin-left: 120px;
+    font-size  : 60px;
+    line-height: 1.3em;
+}
+
+.textbox {
+    margin-left  : auto;
+    margin-right : auto;
+    text-align   : left;
+    width        : 400px;
+    height       : 300px;
+    font-size    : 11pt;
+    padding      : 50px;
+    padding-left : 65px;
+    padding-right: 65px;
+    line-height  : 18px
+}
+
+.backwhite {
+    background-color: white;
+    color           : #4a4a4a;
+}
+
+.title {
+    font-size: 20pt;
+    color    : black
+}
+
+.helvetica {
+    font-family: Helvetica, sans-serifne;
+
 }
