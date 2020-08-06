@@ -177,7 +177,75 @@ body {
     background-position: center;
 }
 
+.blogContain{
+    font-size: 60pt;
+    position: absolute;
+    top: 120px;
+    left: 20%;
+}
+.read{
+    position: absolute;
+    right: 300px;
+    bottom: 500px;
+}
+.button{
+    background: black;  
+    color: white;
+    font-size: 12pt;
+    width: 200px;
+    height: 60px;
+}
+.button:hover{
+    color: whitesmoke;
+    width: 210px;
 
+}
+.blogCard {
+    margin          : 10px;
+    padding-bottom  : 20px;
+    background-color: white
+}
+
+.blogCard:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.photocontainer{
+  background-color: white;
+  width: 370px;
+  height: 400px;   
+}
+
+.blogimage{
+    position: absolute;
+    bottom: 40px; 
+    right: 20px;
+}
+.sub{
+    margin-top  : 45px;
+    margin-right: 15px;
+    margin-left : auto
+}
+.sub:hover{
+    width: 20px;
+}
+
+.position1{
+    position: absolute;
+    bottom: 60px;
+    left: 300px;
+}
+.position2{
+    position: absolute;
+    bottom: 60px;
+    left: 800px;
+
+}
+.position3{
+    position: absolute;
+    bottom: 60px;
+    left: 1300px;
+
+}
 /* block 4*/
 
 
