@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 
 <head>
     <meta charset="UTF-8">
@@ -19,8 +19,11 @@
             padding-left: 20px;
             
        }
+       .error{
+           color: Red;
+       }
     </style>
-    <script src="resitration.js"></script>
+    
 </head>
 
 <body>
@@ -30,57 +33,61 @@
         <form  action="">
 
             <div>
-                <label for="userid"> User id: </label>
-                <input id="userid" type="text" placeholder="User id">
+                <label for=""> User id: </label>
+                <input id="userid" type="text" placeholder="User id" required> <span class= "error" id="usererror"></span>
             </div>
             <div>
                 <label for="password">Password: </label>
-                <input id="password" type="password" placeholder="Password">
+                <input id="password" type="password" placeholder="Password" required> <span class= "error" id="passerror"></span>
             </div>
             <div>
                 <label for="name">Name:</label>
-                <input id="name" type="text" placeholder="Name">
+                <input id="name" type="text" placeholder="Name" required><span class= "error" id="nameerror"></span>
             </div>
             <div>
                 <label for="Address">Address:</label>
-                <input id="Address" type="text">
+                <input id="address" type="text">
             </div>
             <div>
                 <label for="country">country: </label>
                 <select name="country" id="country">
+                    <option value="">(Please select a country)</option>
                     <option value="India">India</option>
                     <option value="USA">USA</option>
-                </select>
+                </select><span class= "error" id="countryerror"></span>
             </div>
             <div>
                 <label for="zipcode">Zip Code: </label>
-                <input id="zipcode" type="text">
+                <input id="zipcode" type="text" required><span class= "error" id="zipcodeerror"></span>
             </div>
             <div>
                 <label for="email">Email: </label>
-                <input id="email" type="email">
+                <input id="email" type="email" required>
             </div>
             <div>
                 <label for=""> Sex:</label>
-                <input type="radio" name="sex" id="male">
+                <input type="radio" name="sex" value="male  " id="male">
                 <label for="male">Male</label>
-                <input type="radio" name="sex" id="female">
+                <input type="radio" value="female" name="sex" id="female">
                 <label for="female">Female</label>
-            </div>
+                
+            </div><span class= "error" id="sexerror"></span>
             <div>
                 <label for="">Language: </label>
-                <input type="checkbox" id="english" name="language">
+                <input name="lan" type="checkbox" id="english" value="english" >
                 <label for="english">English</label>
-                <input type="checkbox" id="nonenglish" name="language">
+                <input name="lan" type="checkbox" id="nonenglish" value="NonEnglish">
                 <label for="nonenglish">Non English</label>
-            </div>
+            </div><span class= "error" id="lanerror"></span>
             <div>
                 <label for="about">About: </label>
                 <input id="about" style="width: 2empx; height: 100px;" type="text">
             </div>
-            <input type="submit" value="submit" id="submit">
+            <input onclick="error()" type="submit" value="submit">
         </form>
     </div>
+
+    <script src="resitration.js"></script>
 </body>
 
 </html>
