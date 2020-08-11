@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculator(a, op, b) {
+            var ans;
+            switch (op) {
+                case "+":
+                    ans = a + b;
+                    break;
+                case "/":
+                    if (b != 0) {
+                        ans = a / b;
+                    }
+                    break;
+                case "*":
+                    ans = a * b;
+                    break;
+                case "-":
+                    ans = a - b;
+            }
+            return ans;
+        }
+        document.write("answer : " + calculator(1, "*", 7));
+    </script>
+</body>
+
+</html>
