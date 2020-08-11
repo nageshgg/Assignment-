@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Formate</title>
+    <script>
+    
+        function formateData(userDate)
+        {
+            var d="";
+            var count=0;
+            var m = "";
+            var y = "";
+            for(var i = 0; i<userDate.length;i++)
+            {
+               if(userDate[i]=="/"){
+               count++;
+               continue;
+               }
+               if(count == 1)
+               {
+                 d = d + userDate[i];
+                 continue;
+               }
+               if(count == 2)
+               {
+                 y = y + userDate[i];
+                 continue;
+               }
+               m= m +userDate[i];
+               
+            }
+             return y+m+d;
+        }
+        console.log(formateData("12/31/2014"));
+    </script>
+</head>
+<body>
+    <h1>See the console you will see the answer :)</h1>
+</body>
+</html>
